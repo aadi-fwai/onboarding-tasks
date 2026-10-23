@@ -1,0 +1,23 @@
+MEASURED (steady window 21:22:45Z -> 21:36:45Z, 840 s)
+  served QPS (total)        0.8218   vs sent 0.8221  = 100.0% of rate
+  QPS/GPU                   0.4109   predicted 0.4111   (-0.0%)
+  per-request decode tok/s  408.3     predicted 411.1       (-0.7%)
+    (mean inter-token       2.449 ms)
+  TTFT mean                 204 ms     predicted 178 ms       (+14.6%)
+  TTFT p50 / p95            225 / 292 ms
+  total latency mean        2657 ms    predicted 2611 ms      (+1.8%)
+  generator_num_active      2.12       predicted batch 2.0
+  prefill queue mean        11.0 ms
+  cache hit                 89.7%   (40576 of 45245 prompt tok/s)
+  generated tok/s (total)   822
+
+JUDGED AGAINST CUSTOMER TARGETS
+  [PASS] decode >= 400 tok/s            408.3 tok/s
+  [PASS] TTFT p50 <= 600 ms             225 ms
+  [PASS] TTFT mean <= 600 ms            204 ms
+  [PASS] total latency mean <= 3.1 s    2657 ms
+  [PASS] served >= 95% of sent QPS      100.0%
+
+  VERDICT: PASS
+
+Fleet at 3 QPS: ceil(3 / 0.8218) = 4 replicas x 2 GPUs

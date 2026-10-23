@@ -1,0 +1,718 @@
+{
+  "base": {
+    "model": "accounts/pyroworks/deployments/llama-v3p1-8b-base-eval",
+    "accuracy": 0.96,
+    "valid_json_rate": 1.0,
+    "n": 50,
+    "predictions": [
+      {
+        "user": "How do I choose the right running shoes?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What is the square root of 169?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What are the best stretches to do before a run?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What was the Columbian Exchange?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What is the remainder when 1234 is divided by 7?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What's the best way to store fresh herbs?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How many diagonals does a hexagon have?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between HTTP and HTTPS?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What should I bring to a potluck dinner?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between process.env and dotenv in Node?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Compute 17 choose 2.",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the probability of drawing an ace from a standard deck?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is a limit order versus a market order?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What was the Boston Massacre and why did it matter?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "How does currency exchange work when traveling abroad?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I care for a bonsai tree?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What are some signs of dehydration to watch for?",
+        "gold": "other",
+        "raw": "{\"domain\": \"health\"}",
+        "pred": "health",
+        "correct": false
+      },
+      {
+        "user": "How do I handle CORS errors in an Express server?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the debt-to-income ratio and why do lenders use it?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Who was Charlemagne and why is he important?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Explain the history of the Suez Canal.",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "How do I read a company's income statement?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Explain the significance of the Battle of Gettysburg.",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "When did the Titanic sink and how many people died?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Simplify sqrt(72).",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "How do you convert a decimal to a percentage?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between term and whole life insurance?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What is a money market account?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Explain what a sovereign wealth fund is.",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I convert a string to an integer in Rust?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Explain the event loop in JavaScript.",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the variance of the set {1, 2, 3, 4, 5}?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What was the Byzantine Empire?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Find the inverse of the function f(x) = 3x + 2.",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is tail-call optimization?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "How do you check if a binary tree is balanced?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the radius of a circle with circumference 31.4?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is a stock option and how do employees use them?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What are municipal bonds and what tax advantages do they offer?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Who was Winston Churchill and what was his role in WWII?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What was the Great Wall of China built to defend against?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What's a good way to meet new people in a new city?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How do I improve my credit card rewards strategy?",
+        "gold": "other",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": false
+      },
+      {
+        "user": "What was the War of 1812 fought over?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between an INNER JOIN and a LEFT JOIN?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Write a function to compute Fibonacci numbers with memoization.",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "How do I make cold brew coffee at home?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How do I start journaling regularly?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How does refinancing a mortgage work?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I list all running docker containers?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      }
+    ]
+  },
+  "tuned": {
+    "model": "accounts/pyroworks/deployments/domain-classifier-eval",
+    "accuracy": 0.98,
+    "valid_json_rate": 1.0,
+    "n": 50,
+    "predictions": [
+      {
+        "user": "How do I choose the right running shoes?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What is the square root of 169?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What are the best stretches to do before a run?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What was the Columbian Exchange?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What is the remainder when 1234 is divided by 7?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What's the best way to store fresh herbs?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How many diagonals does a hexagon have?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between HTTP and HTTPS?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What should I bring to a potluck dinner?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between process.env and dotenv in Node?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Compute 17 choose 2.",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the probability of drawing an ace from a standard deck?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is a limit order versus a market order?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What was the Boston Massacre and why did it matter?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "How does currency exchange work when traveling abroad?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I care for a bonsai tree?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "What are some signs of dehydration to watch for?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How do I handle CORS errors in an Express server?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the debt-to-income ratio and why do lenders use it?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Who was Charlemagne and why is he important?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Explain the history of the Suez Canal.",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "How do I read a company's income statement?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Explain the significance of the Battle of Gettysburg.",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "When did the Titanic sink and how many people died?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Simplify sqrt(72).",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "How do you convert a decimal to a percentage?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between term and whole life insurance?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What is a money market account?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Explain what a sovereign wealth fund is.",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I convert a string to an integer in Rust?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Explain the event loop in JavaScript.",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the variance of the set {1, 2, 3, 4, 5}?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What was the Byzantine Empire?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "Find the inverse of the function f(x) = 3x + 2.",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is tail-call optimization?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "How do you check if a binary tree is balanced?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "What is the radius of a circle with circumference 31.4?",
+        "gold": "math",
+        "raw": "{\"domain\": \"math\"}",
+        "pred": "math",
+        "correct": true
+      },
+      {
+        "user": "What is a stock option and how do employees use them?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "What are municipal bonds and what tax advantages do they offer?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "Who was Winston Churchill and what was his role in WWII?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What was the Great Wall of China built to defend against?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What's a good way to meet new people in a new city?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How do I improve my credit card rewards strategy?",
+        "gold": "other",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": false
+      },
+      {
+        "user": "What was the War of 1812 fought over?",
+        "gold": "history",
+        "raw": "{\"domain\": \"history\"}",
+        "pred": "history",
+        "correct": true
+      },
+      {
+        "user": "What is the difference between an INNER JOIN and a LEFT JOIN?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "Write a function to compute Fibonacci numbers with memoization.",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      },
+      {
+        "user": "How do I make cold brew coffee at home?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How do I start journaling regularly?",
+        "gold": "other",
+        "raw": "{\"domain\": \"other\"}",
+        "pred": "other",
+        "correct": true
+      },
+      {
+        "user": "How does refinancing a mortgage work?",
+        "gold": "finance",
+        "raw": "{\"domain\": \"finance\"}",
+        "pred": "finance",
+        "correct": true
+      },
+      {
+        "user": "How do I list all running docker containers?",
+        "gold": "code",
+        "raw": "{\"domain\": \"code\"}",
+        "pred": "code",
+        "correct": true
+      }
+    ]
+  }
+}

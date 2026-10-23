@@ -1,0 +1,31 @@
+DeepSeek V4.1 Flash — inference optimization, measured results
+Workload: 55,000 prompt / 49,500 cached (90%) / 1,000 output, 3 QPS fleet
+Targets:  decode >= 400 tok/s, TTFT p50 <= 600 ms, e2e mean <= 3.1 s
+Acceptance: dspark, code-30 [0.76,0.55,0.39,0.27,0.18] (forced in all experiments)
+
+exp       config                      cache  QPS/GPU  decode  TTFT mean  TTFT p95  e2e      fleet   verdict
+--------  --------------------------  -----  -------  ------  ---------  --------  -------  ------  -------
+bmag9uba  tp2  2xB300 inline 6.176.1   90%   0.4109   408.3   204 ms     292 ms    2657 ms   8 GPU  PASS
+xkpw07es  tp2  2xB300 inline 6.176.1   50%   0.2181   469.7   419 ms     491 ms    2552 ms  14 GPU  PASS
+dicchhaw  tp2  2+2 disagg    6.176.1   90%   0.2932   398.7   263 ms     295 ms    2775 ms  12 GPU  FAIL (decode)
+xpok1fmt  tp4-inline 4xB300  7.21.0    90%   0.4152   409.8   189 ms     292 ms    2634 ms   8 GPU  PASS
+
+Estimator accuracy
+  QPS/GPU   within 0.1% on all four runs; every predicted fleet count reproduced exactly
+  decode    within 1.3%
+  e2e       within 2.5%
+  TTFT      +14.6% (tp2 @90%), +14.5% (tp4-inline @90%), +0.1% (tp2 @50%), +26.2% (modeled disagg)
+            -> systematic ~15% optimism confined to the high-cache regime; relative
+               comparisons stay reliable (predicted tp4 advantage 13 ms, measured 15 ms)
+
+Lever outcomes
+  prompt caching   dominant: 90% -> 50% costs 8 -> 14 GPUs and flips the topology ranking
+  TP width         scales throughput linearly (2->4 ranks = 2.019x per-replica QPS);
+                   buys 15 ms TTFT and 23 ms e2e, saves zero GPUs
+  disaggregation   worse twice over (2+2 measured, 4+4 estimated at -6.3% QPS/GPU)
+  draft depth      already optimal at 4; periodic sweep interpolates endpoints [0,5]
+  precision        unavailable - every measured cell for this model is FP4
+  image version    6.176.1 -> 7.21.0 worth +0.15% QPS/GPU, i.e. nothing
+  replica count    control variable; throughput only
+
+Floor: 8 GPUs. Reaching 6 requires +22% QPS/GPU; the best lever found delivered +1.1%.

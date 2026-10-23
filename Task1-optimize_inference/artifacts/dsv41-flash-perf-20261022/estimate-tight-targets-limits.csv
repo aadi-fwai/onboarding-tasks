@@ -1,0 +1,21 @@
+note: skipped the on-demand sweep at image 6.176.1 (ondemand): No fireattention experiments found for model deepseek_v41 with 552000000000 parameters
+No configs found.
+hardware,precision,image_tag,engine,engine_image_tag,gen_replica_size,gen_replica_count,prefill_replica_size,prefill_replica_count,num_draft_tokens,qps_per_gpu_mean,qps_per_gpu_low,qps_per_gpu_high,gen_batch_size,tps,ttft,total_latency,max_concurrency,replicas_needed,gpus_needed,operating_points,draft_model_convert_to_precision,outside_sweep_bounds,at_batch_limit,supports_fake_weights,gen_variant,prefill_variant,extra_args,extra_values,in_sweep_grid,prefill_source,tiered_measured,prefill_extra_args,schedule,sweep_index
+
+# No config meets the targets. Best each config reaches at any load, or why the request falls outside its measured points:
+max_tps,min_ttft,min_total_latency,unmet,hardware,precision,image_tag,gpu_count,schedule
+566.7991339367509,0.20711597274116494,1.9714094236757425,max_ttft,b200,fp4,7.21.0,4,release
+560.0020007719761,0.1660011641343367,1.9517090698587378,max_ttft,b300,fp4,6.176.1,4,ondemand
+547.52549326003,0.1660011641343367,1.9924001397251982,max_ttft,b300,fp4,6.176.1,4,ondemand
+543.9335239093841,0.1660011641343367,2.004461115660681,max_ttft,b300,fp4,6.176.1,4,ondemand
+530.3282391883596,0.18212885246171218,2.0677535016986623,max_ttft,b300,fp4,7.21.0,4,release
+499.6451108346329,0.17228912795652385,2.1737096929042097,max_ttft,b300,fp4,6.176.1,2,release
+482.12507992422525,0.178010047616541,2.2521605982520074,max_ttft,b300,fp4,6.176.1,2,ondemand
+478.8685659969649,0.1885116868631067,2.2767673607724648,max_ttft,b300,fp4,6.176.1,2,ondemand
+466.3536376071261,0.1885116868631067,2.3328071728617337,max_ttft,b300,fp4,6.176.1,2,ondemand
+443.7368024423106,0.178010047616541,2.431598198286122,max_ttft,b300,fp4,6.176.1,2,ondemand
+405.4047241923633,0.178010047616541,2.6446808590930817,max_ttft;max_total_latency,b300,fp4,6.176.1,2,ondemand
+314.54043419597764,0.162469621096811,3.341711115298284,min_tps;max_ttft;max_total_latency,b300,fp4,6.129.0,4,release
+220.34081474167323,0.19439191624606267,4.7328157265255895,min_tps;max_ttft;max_total_latency,b200,fp4,6.129.0,2,release
+,,,outside the measured range: prompt length 55000 below the smallest measured context 118100,b300,fp4,7.27.0,2,ondemand
+,,,outside the measured range: prompt length 55000 below the smallest measured context 118100,b300,fp4,7.27.0,4,ondemand

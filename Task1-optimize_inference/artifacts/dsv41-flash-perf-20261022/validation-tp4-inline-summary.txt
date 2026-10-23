@@ -1,0 +1,21 @@
+tp4-inline  (4x B300 FP4, inline, 4 drafts, image 7.21.0)
+  served QPS           1.6609  vs sent 1.6601 = 100.0%
+  QPS/GPU              0.4152  predicted 0.4150  (+0.0%)
+  decode tok/s         409.8    predicted 415.0    (-1.3%)
+  TTFT mean            189 ms    predicted 165 ms   (+14.5%)
+  TTFT p95             292 ms
+  total latency mean   2634 ms   predicted 2575 ms  (+2.3%)
+  generator_num_active 4.27      predicted batch 4.0
+  cache hit            89.7%
+
+  [PASS] decode >= 400 tok/s      409.8
+  [PASS] TTFT mean <= 600 ms      189 ms
+  [PASS] TTFT p95 <= 600 ms       292 ms
+  [PASS] total latency <= 3.1 s   2634 ms
+  [PASS] served >= 95% of sent    100.0%
+  VERDICT: PASS
+
+  fleet for 3 QPS: ceil(3/1.6609) = 2 replicas x 4 GPU = 8 GPUs
+
+  vs validated config A (measured): QPS/GPU 0.4109 | decode 408.3 | TTFT 204 ms (p95 292) | e2e 2657 ms | 8 GPUs
+  delta: QPS/GPU +1.1%  TTFT -15 ms  e2e -23 ms

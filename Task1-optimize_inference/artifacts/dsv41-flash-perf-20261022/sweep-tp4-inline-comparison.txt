@@ -1,0 +1,9 @@
+tp2  release 6.176.1 (config A)    qps/gpu=0.4111 (+0.00%)  batch=2.0   tps=411  ttft=178ms  e2e=2.611s  reps=4x2gpu  GPUS=8
+tp2  on-demand 7.21.0  [image]     qps/gpu=0.4117 (+0.15%)  batch=2.0   tps=412  ttft=179ms  e2e=2.608s  reps=4x2gpu  GPUS=8
+tp4-inline on-demand 7.21.0 [width] qps/gpu=0.4150 (+0.97%)  batch=4.0   tps=415  ttft=165ms  e2e=2.575s  reps=2x4gpu  GPUS=8
+tp4-inline disagg 4+4 7.21.0       qps/gpu=0.3850 (-6.33%)  batch=7.7   tps=400  ttft=202ms  e2e=2.702s  reps=1x4gpu  GPUS=8
+
+per-replica QPS: tp2 = 0.822  tp4-inline = 1.66
+width scaling: 2 GPUs -> 4 GPUs multiplied per-replica QPS by 2.019
+
+needed for 6 GPUs: 0.5000 qps/gpu | best now: 0.415 -> still 20% short

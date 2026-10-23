@@ -1,0 +1,32 @@
+==============================================================================
+2a  config A @ 50% cache
+  served QPS           0.4362  vs sent 0.4364  = 100.0%
+  QPS/GPU              0.2181  predicted 0.2182   (-0.0%)
+  decode tok/s         469.7    predicted 436.4     (+7.6%)
+  TTFT mean            419 ms    predicted 418 ms     (+0.1%)
+  TTFT p95             491 ms    (p95/mean = 1.17)
+  total latency mean   2552 ms   predicted 2710 ms    (-5.8%)
+  cache hit            49.7%
+    [PASS] decode >= 400 tok/s        469.7
+    [PASS] TTFT p50/mean <= 600 ms    419 ms
+    [PASS] TTFT p95 <= 600 ms         491 ms
+    [PASS] total latency <= 3.1 s     2552 ms
+    [PASS] served >= 95% of sent      100.0%
+    VERDICT: PASS
+  fleet for 3 QPS: ceil(3/0.4362) = 7 replicas x 2 GPU = 14 GPUs  (predicted 14)
+==============================================================================
+2b  2+2 disagg @ 90% cache
+  served QPS           1.1730  vs sent 1.1726  = 100.0%
+  QPS/GPU              0.2932  predicted 0.2932   (+0.0%)
+  decode tok/s         398.7    predicted 400.2     (-0.4%)
+  TTFT mean            263 ms    predicted 208 ms     (+26.2%)
+  TTFT p95             295 ms    (p95/mean = 1.12)
+  total latency mean   2775 ms   predicted 2707 ms    (+2.5%)
+  cache hit            89.7%
+    [FAIL] decode >= 400 tok/s        398.7
+    [PASS] TTFT p50/mean <= 600 ms    263 ms
+    [PASS] TTFT p95 <= 600 ms         295 ms
+    [PASS] total latency <= 3.1 s     2775 ms
+    [PASS] served >= 95% of sent      100.0%
+    VERDICT: FAIL
+  fleet for 3 QPS: ceil(3/1.1730) = 3 replicas x 4 GPU = 12 GPUs  (predicted 12)
